@@ -1,0 +1,20 @@
+{
+  "name": "cli-note-taking-app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/shaan-hossain-01/cli-note-taking-app#readme",
+  "bugs": {
+    "url": "https://github.com/shaan-hossain-01/cli-note-taking-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaan-hossain-01/cli-note-taking-app.git"
+  },
+  "license": "ISC",
+  "author": "Shaan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
