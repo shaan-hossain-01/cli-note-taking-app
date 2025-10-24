@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/shaan-hossain-01/cli-note-taking-app/issues"
   },
+  "bin":{
+    "note": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shaan-hossain-01/cli-note-taking-app.git"
