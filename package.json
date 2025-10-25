@@ -1,12 +1,13 @@
 {
   "name": "cli-note-taking-app",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "",
   "homepage": "https://github.com/shaan-hossain-01/cli-note-taking-app#readme",
   "bugs": {
     "url": "https://github.com/shaan-hossain-01/cli-note-taking-app/issues"
   },
-  "bin":{
+  "bin": {
     "note": "./index.js"
   },
   "repository": {
@@ -15,9 +16,11 @@
   },
   "license": "ISC",
   "author": "Shaan",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "yargs": "^18.0.0"
   }
 }
