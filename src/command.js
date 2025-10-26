@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
+import { newNotes } from "./notes.js";
 
 yargs(hideBin(process.argv))
   .command(
@@ -13,7 +14,9 @@ yargs(hideBin(process.argv))
       });
     },
     async (argv) => {
-      console.log(argv.note);
+      const tags = argv.tags ? argv.tags.split(",") : [];
+      const note = await newNotes(argv.note, tags);
+      console.log("New note created:", note.id);
     }
   )
   .option("tags", {
