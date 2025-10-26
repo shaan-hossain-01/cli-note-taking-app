@@ -9,3 +9,15 @@ export const newNotes = async (note, tags) => {
   await insertDB(newNote);
   return newNote;
 };
+
+export const getAllNotes = async () => {
+  const { notes } = await getDB();
+  return notes;
+};
+
+export const findNotes = async (filter) => {
+  const { notes } = await getDB();
+  return notes.filter((note) =>
+    note.content.toLowerCase().includes(filter.toLowerCase())
+  );
+};
